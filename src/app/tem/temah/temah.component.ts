@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styles: ``
 })
 export class TemahComponent {
-  @Input() mensaje!: string;
+  @Input() mensaje!: string;    /* entra mensaje */
 
   @Output() mensaje2 = new EventEmitter<string>();
 

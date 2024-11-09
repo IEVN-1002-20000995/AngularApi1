@@ -11,6 +11,7 @@ import { TemahComponent } from "../temah/temah.component";
 export class TemapComponent {
   title='Hola desde papa';
   mensaje2:string=""
+  
   recibirMensaje(mensaje:string){
     this.mensaje2=mensaje
   }
