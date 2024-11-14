@@ -9,7 +9,11 @@ export default[
         loadComponent:()=>import('./agregar/agregar.component')
     },
     {
-        path:'elimina/:matricula',
+        path:'eliminar/:matricula',
         loadComponent:()=>import('./eliminar/eliminar.component')
+    },
+    {
+        path:'editar/:matricula',
+        loadComponent:()=>import('./editar/editar.component')
     }
 ]

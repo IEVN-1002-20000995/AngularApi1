@@ -42,15 +42,15 @@ export default class EliminarComponent {
   }
  
   asignaCampos(dataSource:any){
-    this.regAlumno.matricula=dataSource.alumno.matricula
-    this.regAlumno.nombre=dataSource.alumno.nombre
-    this.regAlumno.apaterno=dataSource.alumno.apaterno
-    this.regAlumno.amaterno=dataSource.alumno.amaterno
-    this.regAlumno.correo=dataSource.alumno.correo
-    console.log(dataSource.alumno.matricula)
+    this.regAlumno.matricula=dataSource.alumnos.matricula
+    this.regAlumno.nombre=dataSource.alumnos.nombre
+    this.regAlumno.apaterno=dataSource.alumnos.apaterno
+    this.regAlumno.amaterno=dataSource.alumnos.amaterno
+    this.regAlumno.correo=dataSource.alumnos.correo
+    console.log(dataSource.alumnos.matricula)
  }
- 
- 
+
+  
  eliminar(){
   console.log("funcion: "+this.tem[3])
   this.alumnosUtl.EliminaAlumno(this.tem[3]).subscribe({
@@ -58,7 +58,7 @@ export default class EliminarComponent {
     error:(e)=> console.error(e),
     complete:()=>console.info()})
  
-    this.router.navigate(['/humani/listaalumnos'])
+    this.router.navigate(['/utl/listaalumnos'])
  
 }
  

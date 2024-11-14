@@ -20,7 +20,7 @@ agregarNuevoAlumno(datos:AlumnosUtl){
 }
  
 public getAlumno(mat:number):Observable<AlumnosUtl>{
-  console.log(mat)
+  console.log('cs'+mat)
   return this.http.get<AlumnosUtl>('http://127.0.0.1:5000/alumnos/'+mat)
 }
  
